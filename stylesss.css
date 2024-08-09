@@ -1,0 +1,106 @@
+body{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('bg2.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
+}
+.quizcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.question1images img {
+    width:500px;
+    height:600px;
+}
+
+.question1choices{
+    display:flex;
+    gap:300px;
+}
+#question22{
+    display:none;
+}
+.question2choices{
+    display:none;
+}
+.question2images{
+    display:none;
+}
+.koy{
+
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.koy::after{
+    content: "Joven Balgos"; /* Text to display on hover */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent; /* Initially transparent */
+    transition: color 0.3s ease;
+}
+.koy:hover::after {
+    color: black; /* Show the hovered text */
+}
+.koy:hover span{
+    visibility: hidden; /* Hide the original text */
+}
+.miguel{
+
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.miguel::after{
+    content: "Joven Balgos"; /* Text to display on hover */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent; /* Initially transparent */
+    transition: color 0.3s ease;
+}
+.miguel:hover::after {
+    color: black; /* Show the hovered text */
+}
+.miguel:hover span{
+    visibility: hidden; /* Hide the original text */
+}
+
+
+.joven{
+    cursor: pointer;
+}
+.nextbutton{
+    width:200px;
+    height: 100px;
+    font-size: 50px;
+    background-color: transparent;
+    border-color: aliceblue;
+    display: none;
+    cursor: pointer;
+}
+
+.koy2, .joven2, .miguel2{
+cursor:pointer;
+
+}
+
+#container2{
+display:none;
+}
+#nextbutton2{
+    display:none;
+}

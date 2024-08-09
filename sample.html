@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image on Click</title>
+    <style>
+        #image {
+            width: 300px;
+            height: auto;
+            cursor: pointer; /* Pointer cursor to indicate the image is clickable */
+        }
+    </style>
+</head>
+<body>
+    <h2>Click the image to change it</h2>
+    <img id="image" src="card.png" alt="Image 1" onclick="changeImage()">
+
+    <script>
+        function changeImage() {
+            const image = document.getElementById('image');
+            const image1 = 'card.png'; // Path to the first image
+            const image2 = 'card1.png'; // Path to the second image
+            
+            // Toggle between the two images
+            if (image.src.includes(image1)) {
+                image.src = image2;
+                image.alt = "Image 2";
+            } else {
+                image.src = image1;
+                image.alt = "Image 1";
+            }
+        }
+    </script>
+</body>
+</html>

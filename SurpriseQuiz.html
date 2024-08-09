@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary Babe!</title>
+    <link rel="stylesheet" href="stylesss.css">
+</head>
+<body>
+    <div  id="container1" class="quizcontainer">
+        <h1 id ="question1" >1.Sino ang pinakapogi sa tatlo?</h1>
+     <div class="question1images">
+<img id="koyimage" src="kokoy.jpg">
+<img id ="jovenimage" src="joven.jpg">
+<img  id="miguelimage" src="miguel.jpg">
+     </div>
+     <div class="question1choices">
+        <h1 id="koy" class="koy" onclick="correct()"><span>Kokoy De Santos</span></h1>
+        <h1 id ="joven" class="joven" onclick="correct()">Joven Balgos</h1>
+        <h1  id="miguel" class="miguel" onclick="correct()"><span>Miguel Tanfelix</span></h1>
+     </div>
+     <button id ="nextbutton" class="nextbutton" onclick="nextquestion()">Next</button>
+    </div>
+    <div  id="container2" class="quizcontainer">
+        <h1 id ="question2" >2.Sino naman ang pinakasexy?</h1>
+     <div class="question1images">
+<img id="koyimage2" src="kokoy2.jpg">
+<img id ="jovenimage2" src="joven2.jpg">
+<img  id="miguelimage2" src="miguel2.jpg">
+     </div>
+     <div class="question1choices">
+        <h1 id="koy2" class="koy2" onclick="changekoyimage()">Kokoy De Santos</h1>
+        <h1 id ="joven2" class="joven2" onclick="changejovenimage()">Joven Balgos</h1>
+        <h1  id="miguel2" class="miguel2" onclick="changemiguelimage()">Miguel Tanfelix</h1>
+     </div>
+     <button id ="nextbutton2" class="nextbutton" onclick="nextpage()">Next</button>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
